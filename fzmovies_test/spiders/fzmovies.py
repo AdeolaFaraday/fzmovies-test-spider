@@ -27,8 +27,8 @@ class FzmoviesSpider(scrapy.Spider):
 
         # with open('screenshot.png', 'wb') as f:
         #     f.write(img)
+        movie_name = 'clouds'
         chrome_path = which("chromedriver")
-
         driver = webdriver.Chrome(executable_path=chrome_path)
         driver.set_window_size(1920, 1080)
         driver.get("https://www.fzmovies.net/")
@@ -38,7 +38,7 @@ class FzmoviesSpider(scrapy.Spider):
         # Retrieve the message on the Alert window
         obj.text
 
-        time.sleep(2)
+        # time.sleep(2)
 
         # Or Dismiss the Alert using
         obj.dismiss()
@@ -47,7 +47,7 @@ class FzmoviesSpider(scrapy.Spider):
             "//input[@id='searchname']")
 
         # print("shows following message: " + search_input)
-        search_input.send_keys("I still believe")
+        search_input.send_keys(movie_name)
 
         search_input.send_keys(Keys.ENTER)
 
@@ -63,13 +63,17 @@ class FzmoviesSpider(scrapy.Spider):
         # time.sleep(2)
 
         # download_follow_link = driver.find_element_by_xpath("//a[@id='downloadoptionslink2']")
-
+        movie_title = driver.find_element_by_xpath(
+            "//div[@class='moviename']").get_attribute("textContent")
+        movie_size = driver.find_element_by_xpath("(//dcounter)[4]").get_attribute("innerHTML")
+        movie_img = driver.find_element_by_xpath(
+            "//img[@itemprop='image']").get_attribute('src')
         button = driver.find_element_by_xpath(
             "//a[@id='downloadoptionslink2']")
         driver.execute_script("arguments[0].click();", button)
 
-        button = driver.find_element_by_xpath("//a[@id='downloadlink']")
-        driver.execute_script("arguments[0].click();", button)
+        button2 = driver.find_element_by_xpath("//a[@id='downloadlink']")
+        driver.execute_script("arguments[0].click();", button2)
 
         download_link = driver.find_element_by_xpath(
             "//ul[@class='downloadlinks']/p[1]/input").get_attribute('value')
@@ -78,5 +82,8 @@ class FzmoviesSpider(scrapy.Spider):
         self.html = driver.page_source
         driver.close()
         yield {
+            'movie_title': movie_title,
+            'movie_size': movie_size,
+            'movie_img': movie_img,
             'movie_download_link': download_link
         }

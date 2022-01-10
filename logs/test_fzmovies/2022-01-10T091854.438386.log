@@ -1,0 +1,33 @@
+2022-01-10 09:18:56 [scrapy] DEBUG: Redirecting (301) to <GET https://www.fzmovies.net/robots.txt> from <GET http://www.fzmovies.net/robots.txt>
+2022-01-10 09:18:57 [scrapy] DEBUG: Crawled (404) <GET https://www.fzmovies.net/robots.txt> (referer: None)
+2022-01-10 09:18:57 [scrapy] DEBUG: Redirecting (301) to <GET https://www.fzmovies.net/> from <GET http://www.fzmovies.net/>
+2022-01-10 09:19:09 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/> (referer: None)
+2022-01-10 09:19:44 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Life%20Itself--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-10 09:20:26 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/movie-Life%20Itself--hmp4.htm>
+{'movie_title': 'Life Itself (in Hollywood Movies) Life Itself (2018) - Download Movie for mobile in best quality 3gp and mp4 format. Also stream Life Itself on your mobile, tablets and ipads', 'movie_size': ' (285 MB) { 9211 hits }', 'movie_img': 'https://www.fzmovies.net/imdb_images/Life.Itself.2018.jpg', 'movie_download_link': 'https://ik2mqisu1w.poiuytrewqasdfghjkl.cyou/res/950b25c4104d424c7ccd974021ac07f0/3141aaed2f7c169b50e0a068e2e3c94c/Life_Itself_(2018)_BluRay_high_(fzmovies.net)_14329164eb7f0a7ee2bcd919fd135097.mp4'}
+2022-01-10 09:20:26 [scrapy] INFO: Closing spider (finished)
+2022-01-10 09:20:28 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1865,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 5,
+ 'downloader/response_bytes': 39871,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 2,
+ 'downloader/response_status_count/301': 2,
+ 'downloader/response_status_count/404': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 1, 10, 17, 20, 26, 867550),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 93,
+ 'log_count/INFO': 6,
+ 'request_depth_max': 1,
+ 'response_received_count': 3,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2022, 1, 10, 17, 18, 56, 134839)}
+2022-01-10 09:20:28 [scrapy] INFO: Spider closed (finished)

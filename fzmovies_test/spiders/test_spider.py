@@ -28,7 +28,7 @@ class TestSpiderSpider(scrapy.Spider):
 
         # with open('screenshot.png', 'wb') as f:
         #     f.write(img)
-        movie_name = 'clouds'
+        movie_name = 'life itself'
         chrome_options = Options()
         chrome_options.add_argument('--headless')
         chrome_path = which("chromedriver")

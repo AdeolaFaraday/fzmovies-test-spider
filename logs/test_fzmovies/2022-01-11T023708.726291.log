@@ -1,0 +1,111 @@
+2022-01-11 02:37:10 [scrapy] DEBUG: Redirecting (301) to <GET https://www.fzmovies.net/robots.txt> from <GET http://www.fzmovies.net/robots.txt>
+2022-01-11 02:37:11 [scrapy] DEBUG: Crawled (404) <GET https://www.fzmovies.net/robots.txt> (referer: None)
+2022-01-11 02:37:11 [scrapy] DEBUG: Redirecting (301) to <GET https://www.fzmovies.net/> from <GET http://www.fzmovies.net/>
+2022-01-11 02:37:18 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/> (referer: None)
+2022-01-11 02:37:49 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Clouds--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 02:37:49 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Beyond%20the%20Clouds--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 02:37:49 [scrapy] ERROR: Spider error processing <GET https://www.fzmovies.net/movie-Beyond%20the%20Clouds--hmp4.htm> (referer: https://www.fzmovies.net/)
+Traceback (most recent call last):
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\adeola\Projects\fzmovies_test\fzmovies_test\spiders\test_spider.py", line 73, in parse_film
+    yield response.follow(url=response.xpath("//a[@id='downloadoptionslink2']//@href")[1].get(), callback=self.parse_first_link,
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-01-11 02:37:49 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-A%20Walk%20in%20the%20Clouds%201995--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 02:37:49 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Clouds%20of%20%20Sils%20Maria--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 02:37:50 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Above%20the%20Clouds--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 02:37:50 [scrapy] ERROR: Spider error processing <GET https://www.fzmovies.net/movie-Above%20the%20Clouds--hmp4.htm> (referer: https://www.fzmovies.net/)
+Traceback (most recent call last):
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\adeola\Projects\fzmovies_test\fzmovies_test\spiders\test_spider.py", line 73, in parse_film
+    yield response.follow(url=response.xpath("//a[@id='downloadoptionslink2']//@href")[1].get(), callback=self.parse_first_link,
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-01-11 02:37:50 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Head%20in%20the%20Clouds--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 02:37:50 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Johnny%20in%20the%20Clouds%20[The%20Way%20to%20the%20Stars]--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 02:37:50 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Spirits%20of%20the%20Air%20Gremlins%20of%20the%20Clouds--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 02:37:50 [scrapy] ERROR: Spider error processing <GET https://www.fzmovies.net/movie-Spirits%20of%20the%20Air%20Gremlins%20of%20the%20Clouds--hmp4.htm> (referer: https://www.fzmovies.net/)
+Traceback (most recent call last):
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\adeola\Projects\fzmovies_test\fzmovies_test\spiders\test_spider.py", line 73, in parse_film
+    yield response.follow(url=response.xpath("//a[@id='downloadoptionslink2']//@href")[1].get(), callback=self.parse_first_link,
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-01-11 02:37:51 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-21777-f7ca316ae4086982a8c9390b3ce08213> (referer: https://www.fzmovies.net/movie-Clouds--hmp4.htm)
+2022-01-11 02:37:52 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-29166-a5816065654e3f7c00c84717a6438065> (referer: https://www.fzmovies.net/movie-A%20Walk%20in%20the%20Clouds%201995--hmp4.htm)
+2022-01-11 02:37:52 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-33152-106c531ecc05fa1fbc7c4ef0a9e70720> (referer: https://www.fzmovies.net/movie-Clouds%20of%20%20Sils%20Maria--hmp4.htm)
+2022-01-11 02:37:52 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-32556-fbc72914cb497f301f866bff9090d4d0> (referer: https://www.fzmovies.net/movie-Head%20in%20the%20Clouds--hmp4.htm)
+2022-01-11 02:37:52 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-25175-b2dc2eabff29ac1d4a3be30a675ad7be> (referer: https://www.fzmovies.net/movie-Johnny%20in%20the%20Clouds%20[The%20Way%20to%20the%20Stars]--hmp4.htm)
+2022-01-11 02:37:54 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-21777-6a1d263c3dc9c2d5f959d3c79a82bf3a> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-21777-f7ca316ae4086982a8c9390b3ce08213)
+2022-01-11 02:37:54 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-21777-6a1d263c3dc9c2d5f959d3c79a82bf3a>
+{'movie_title': 'Clouds', 'movie_size': ' (321 MB) { 24018 hits }', 'movie_img': None, 'download_link': 'dlink.php?id=res/614774a84bca32182e1b81d831542d9a/170416fdd653c9865b53c79fe1028ce6/Clouds_(2020)_WEB-DL_720p_(fzmovies.net)_9839f41dfd944648fe4c99a4e382b97f.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 02:37:55 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-29166-0c433589ee879db3df16dc56ae9e2289> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-29166-a5816065654e3f7c00c84717a6438065)
+2022-01-11 02:37:55 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-29166-0c433589ee879db3df16dc56ae9e2289>
+{'movie_title': 'A Walk in the Clouds 1995', 'movie_size': ' (273 MB) { 7499 hits }', 'movie_img': None, 'download_link': 'dlink.php?id=res/950b25c4104d424c7ccd974021ac07f0/a53c9cadc148d2d1683742d532f4db95/A_Walk_in_the_Clouds_1995_(1995)_BluRay_720p_(fzmovies.net)_a673a33844a92c751bb8c7c84dd9cb22.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 02:37:56 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-33152-a2775e7f925be790ccd06bdae1e0020a> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-33152-106c531ecc05fa1fbc7c4ef0a9e70720)
+2022-01-11 02:37:56 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-25175-a650cf68fddf7bee94e85937bfe2d724> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-25175-b2dc2eabff29ac1d4a3be30a675ad7be)
+2022-01-11 02:37:56 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-32556-82435595c27540b35498225c8640d2f6> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-32556-fbc72914cb497f301f866bff9090d4d0)
+2022-01-11 02:37:56 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-33152-a2775e7f925be790ccd06bdae1e0020a>
+{'movie_title': 'Clouds of Sils Maria', 'movie_size': ' (331 MB) { 2155 hits }', 'movie_img': None, 'download_link': 'dlink.php?id=res/950b25c4104d424c7ccd974021ac07f0/99f9c6ff83a1faf2ab920c25754db008/Clouds_of__Sils_Maria_(2014)_BluRay_720p_(fzmovies.net)_b050ebd1a025c016cf656b2c922757d1.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 02:37:56 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-25175-a650cf68fddf7bee94e85937bfe2d724>
+{'movie_title': 'Johnny in the Clouds [The Way to the Stars]', 'movie_size': ' (288 MB) { 95 hits }', 'movie_img': None, 'download_link': 'dlink.php?id=res/614774a84bca32182e1b81d831542d9a/5b5ede90af94485190169ddaa6b05149/Johnny_in_the_Clouds_[The_Way_to_the_Stars]_(1945)_BluRay_720p_(fzmovies.net)_688ead44aeadc93017ece95e3d9af0b0.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 02:37:56 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-32556-82435595c27540b35498225c8640d2f6>
+{'movie_title': 'Head in the Clouds', 'movie_size': ' (319 MB) { 1777 hits }', 'movie_img': None, 'download_link': 'dlink.php?id=res/950b25c4104d424c7ccd974021ac07f0/64ccff3c449266d1b5d80d1ebc375dc8/Head_in_the_Clouds_(2004)_BluRay_720p_(fzmovies.net)_4f523b1f909c5dc006e93fd8ba4642cc.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 02:37:56 [scrapy] INFO: Closing spider (finished)
+2022-01-11 02:37:58 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 11236,
+ 'downloader/request_count': 22,
+ 'downloader/request_method_count/GET': 22,
+ 'downloader/response_bytes': 339293,
+ 'downloader/response_count': 22,
+ 'downloader/response_status_count/200': 19,
+ 'downloader/response_status_count/301': 2,
+ 'downloader/response_status_count/404': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 1, 11, 10, 37, 56, 161701),
+ 'item_scraped_count': 5,
+ 'log_count/DEBUG': 113,
+ 'log_count/ERROR': 3,
+ 'log_count/INFO': 6,
+ 'request_depth_max': 3,
+ 'response_received_count': 20,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 20,
+ 'scheduler/dequeued/memory': 20,
+ 'scheduler/enqueued': 20,
+ 'scheduler/enqueued/memory': 20,
+ 'spider_exceptions/IndexError': 3,
+ 'start_time': datetime.datetime(2022, 1, 11, 10, 37, 10, 387539)}
+2022-01-11 02:37:58 [scrapy] INFO: Spider closed (finished)

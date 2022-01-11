@@ -28,7 +28,7 @@ class TestSpiderSpider(scrapy.Spider):
 
         # with open('screenshot.png', 'wb') as f:
         #     f.write(img)
-        movie_name = 'life itself'
+        movie_name = 'clouds'
         chrome_options = Options()
         chrome_options.add_argument('--headless')
         chrome_path = which("chromedriver")
@@ -64,36 +64,27 @@ class TestSpiderSpider(scrapy.Spider):
         # # rur_tab[4].click()
         print(film_links, 'FILM LINK HEREEEEEEEEEEEEEEE')
         for film_link in film_links:
+            # yield {
+            #     'film': film_link.get_attribute('href')
+            # }
             yield response.follow(url=film_link.get_attribute('href'), callback=self.parse_film, meta={'film': film_link.get_attribute('href')})
 
     def parse_film(self, response):
-        link = response.request.meta['film']
-        chrome_options = Options()
-        chrome_options.add_argument('--headless')
-        chrome_path = which("chromedriver")
-        driver = webdriver.Chrome(
-            executable_path=chrome_path, options=chrome_options)
+        yield response.follow(url=response.xpath("//a[@id='downloadoptionslink2']//@href")[1].get(), callback=self.parse_first_link,
+                              meta={'movie_title': response.xpath("//div[@class='moviename']//text()").get(), 'movie_size': response.xpath("(//dcounter)[4]//text()").get(),
+                                    'movie_img': response.xpath("//img[@itemprop='image']//@src").get()
+                                    }
+                              )
 
-        driver.get(link)
+    def parse_first_link(self, response):
+        yield response.follow(url=response.xpath("//a[@id='downloadlink']//@href").get(), callback=self.parse_second_link, meta={'movie_title': response.request.meta['movie_title'], 'movie_size': response.request.meta['movie_size'],
+                                                                                                                                 'movie_img': response.request.meta['movie_img']
+                                                                                                                                 })
 
-        movie_title = driver.find_element_by_xpath(
-            "//div[@class='moviename']").get_attribute("textContent")
-        movie_size = driver.find_element_by_xpath(
-            "(//dcounter)[4]").get_attribute("innerHTML")
-        movie_img = driver.find_element_by_xpath(
-            "//img[@itemprop='image']").get_attribute('src')
-        button = driver.find_element_by_xpath(
-            "//a[@id='downloadoptionslink2']")
-        driver.execute_script("arguments[0].click();", button)
-
-        button_2 = driver.find_element_by_xpath("//a[@id='downloadlink']")
-        driver.execute_script("arguments[0].click();", button_2)
-
-        download_link = driver.find_element_by_xpath(
-            "//ul[@class='downloadlinks']/p[1]/input").get_attribute('value')
+    def parse_second_link(self, response):
         yield {
-            'movie_title': movie_title,
-            'movie_size': movie_size,
-            'movie_img': movie_img,
-            'movie_download_link': download_link
+            'movie_title': response.request.meta['movie_title'],
+            'movie_size': response.request.meta['movie_size'],
+            'movie_img': response.request.meta['movie_img'],
+            'download_link': response.xpath("//a[@id='dlink0']//@href").get()
         }

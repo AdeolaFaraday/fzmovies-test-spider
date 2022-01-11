@@ -1,0 +1,45 @@
+2022-01-10 12:08:14 [scrapy] DEBUG: Redirecting (301) to <GET https://www.fzmovies.net/robots.txt> from <GET http://www.fzmovies.net/robots.txt>
+2022-01-10 12:08:15 [scrapy] DEBUG: Crawled (404) <GET https://www.fzmovies.net/robots.txt> (referer: None)
+2022-01-10 12:08:15 [scrapy] DEBUG: Redirecting (301) to <GET https://www.fzmovies.net/> from <GET http://www.fzmovies.net/>
+2022-01-10 12:08:17 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/> (referer: None)
+2022-01-10 12:08:45 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/>
+{'film': 'https://www.fzmovies.net/movie-Clouds--hmp4.htm'}
+2022-01-10 12:08:45 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/>
+{'film': 'https://www.fzmovies.net/movie-Beyond%20the%20Clouds--hmp4.htm'}
+2022-01-10 12:08:45 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/>
+{'film': 'https://www.fzmovies.net/movie-A%20Walk%20in%20the%20Clouds%201995--hmp4.htm'}
+2022-01-10 12:08:45 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/>
+{'film': 'https://www.fzmovies.net/movie-Clouds%20of%20%20Sils%20Maria--hmp4.htm'}
+2022-01-10 12:08:45 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/>
+{'film': 'https://www.fzmovies.net/movie-Head%20in%20the%20Clouds--hmp4.htm'}
+2022-01-10 12:08:45 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/>
+{'film': 'https://www.fzmovies.net/movie-Spirits%20of%20the%20Air%20Gremlins%20of%20the%20Clouds--hmp4.htm'}
+2022-01-10 12:08:45 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/>
+{'film': 'https://www.fzmovies.net/movie-Above%20the%20Clouds--hmp4.htm'}
+2022-01-10 12:08:45 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/>
+{'film': 'https://www.fzmovies.net/movie-Johnny%20in%20the%20Clouds%20[The%20Way%20to%20the%20Stars]--hmp4.htm'}
+2022-01-10 12:08:45 [scrapy] INFO: Closing spider (finished)
+2022-01-10 12:08:47 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1381,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 18075,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/301': 2,
+ 'downloader/response_status_count/404': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 1, 10, 20, 8, 45, 267356),
+ 'item_scraped_count': 8,
+ 'log_count/DEBUG': 74,
+ 'log_count/INFO': 6,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2022, 1, 10, 20, 8, 14, 291342)}
+2022-01-10 12:08:47 [scrapy] INFO: Spider closed (finished)

@@ -22,13 +22,17 @@ class TestSpiderSpider(scrapy.Spider):
     #         screenshot=True,
     #         callback=self.parse
     #     )
+    def __init__(self, name=None, *args, **kwargs):
+        super(TestSpiderSpider, self).__init__(*args, **kwargs)
+        self.movie_name = name
 
     def parse(self, response):
         # img = response.meta['screenshot']
 
         # with open('screenshot.png', 'wb') as f:
         #     f.write(img)
-        movie_name = 'clouds'
+        print(self.movie_name, "self.movie_nameself.movie_nameself.movie_nameself.movie_nameself.movie_nameself.movie_name")
+        movie_name = self.movie_name
         chrome_options = Options()
         chrome_options.add_argument('--headless')
         chrome_path = which("chromedriver")
@@ -88,3 +92,5 @@ class TestSpiderSpider(scrapy.Spider):
             'movie_img': response.request.meta['movie_img'],
             'download_link': response.xpath("//a[@id='dlink0']//@href").get()
         }
+
+# http://localhost:9080/crawl.json?spider_name=test_fzmovies&&start_requests=True&&crawl_args={"name":"clouds"}

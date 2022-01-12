@@ -1,0 +1,171 @@
+2022-01-11 03:53:46 [scrapy] DEBUG: Redirecting (301) to <GET https://www.fzmovies.net/robots.txt> from <GET http://www.fzmovies.net/robots.txt>
+2022-01-11 03:53:46 [scrapy] DEBUG: Crawled (404) <GET https://www.fzmovies.net/robots.txt> (referer: None)
+2022-01-11 03:53:47 [scrapy] DEBUG: Redirecting (301) to <GET https://www.fzmovies.net/> from <GET http://www.fzmovies.net/>
+2022-01-11 03:53:48 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/> (referer: None)
+2022-01-11 03:54:14 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Bad%20Boys%20for%20Life--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 03:54:17 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Life%20in%20a%20Year--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 03:54:17 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-The%20Secret%20Life%20of%20Pets--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 03:54:17 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Life%20of%20Pi%20-%20Eng--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 03:54:17 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-The%20Secret%20Life%20of%20Pets%202--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 03:54:17 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Life%20of%20Pi--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 03:54:17 [scrapy] ERROR: Spider error processing <GET https://www.fzmovies.net/movie-Life%20of%20Pi%20-%20Eng--hmp4.htm> (referer: https://www.fzmovies.net/)
+Traceback (most recent call last):
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\adeola\Projects\fzmovies_test\fzmovies_test\spiders\test_spider.py", line 77, in parse_film
+    yield response.follow(url=response.xpath("//a[@id='downloadoptionslink2']//@href")[1].get(), callback=self.parse_first_link,
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-01-11 03:54:17 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Resident%20Evil%20Afterlife%202010--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 03:54:17 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Life%20of%20the%20Party--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 03:54:22 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Life%202017--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 03:54:22 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Anti%20Life%20[Breach]--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 03:54:22 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Middle%20School%20The%20Worst%20Years%20of%20My%20Life--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 03:54:22 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Lara%20Croft%20Tomb%20Raider%20The%20Cradle%20of%20Life--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 03:54:22 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Life%20as%20We%20Know%20It--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 03:54:22 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-The%20Secret%20Life%20of%20Walter%20Mitty--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 03:54:22 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Ghostbusters%20Afterlife--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 03:54:22 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-The%20Odd%20Life%20of%20Timothy%20Green--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 03:54:26 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-22548-49ce91d085d6e4d74020cd68b6d0a32b> (referer: https://www.fzmovies.net/movie-Life%20in%20a%20Year--hmp4.htm)
+2022-01-11 03:54:26 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-25879-f923510b0e3162e1bd1692f4025b74a2> (referer: https://www.fzmovies.net/movie-Bad%20Boys%20for%20Life--hmp4.htm)
+2022-01-11 03:54:26 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Life%20Is%20Beautiful--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 03:54:26 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-30947-5d47acdcfc7e8728f27d9e842944b2fa> (referer: https://www.fzmovies.net/movie-The%20Secret%20Life%20of%20Pets%202--hmp4.htm)
+2022-01-11 03:54:26 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Life%201999--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 03:54:26 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-30956-bb909d0b5d9c173c35174886408bcea9> (referer: https://www.fzmovies.net/movie-The%20Secret%20Life%20of%20Pets--hmp4.htm)
+2022-01-11 03:54:26 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-31294-7cc9def4a6e7ab21b32824eb722539ab> (referer: https://www.fzmovies.net/movie-Life%20of%20Pi--hmp4.htm)
+2022-01-11 03:54:26 [scrapy] ERROR: Spider error processing <GET https://www.fzmovies.net/movie-Life%20Is%20Beautiful--hmp4.htm> (referer: https://www.fzmovies.net/)
+Traceback (most recent call last):
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\adeola\Projects\fzmovies_test\fzmovies_test\spiders\test_spider.py", line 77, in parse_film
+    yield response.follow(url=response.xpath("//a[@id='downloadoptionslink2']//@href")[1].get(), callback=self.parse_first_link,
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-01-11 03:54:26 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-The%20Lifeguard--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 03:54:31 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-37301-e354fa707d35d2526bf91f8729f5e16b> (referer: https://www.fzmovies.net/movie-Life%20of%20the%20Party--hmp4.htm)
+2022-01-11 03:54:31 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-28416-8788dd2745ce4cc1c42078f5f71727d7> (referer: https://www.fzmovies.net/movie-Resident%20Evil%20Afterlife%202010--hmp4.htm)
+2022-01-11 03:54:31 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Life%20Like--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 03:54:31 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-27374-d56126d80cf2978941af2a17fdaa9083> (referer: https://www.fzmovies.net/movie-Life%202017--hmp4.htm)
+2022-01-11 03:54:31 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-34015-d892dd3c845515c82f6df854f4caa09e> (referer: https://www.fzmovies.net/movie-Anti%20Life%20[Breach]--hmp4.htm)
+2022-01-11 03:54:31 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-32573-19207e9d2f9c5432cb0662b8ec41f16d> (referer: https://www.fzmovies.net/movie-Life%20as%20We%20Know%20It--hmp4.htm)
+2022-01-11 03:54:31 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-34075-0223ebaca26b93084aa824bcca28b6ae> (referer: https://www.fzmovies.net/movie-Middle%20School%20The%20Worst%20Years%20of%20My%20Life--hmp4.htm)
+2022-01-11 03:54:31 [scrapy] ERROR: Spider error processing <GET https://www.fzmovies.net/movie-Life%20Like--hmp4.htm> (referer: https://www.fzmovies.net/)
+Traceback (most recent call last):
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\adeola\Projects\fzmovies_test\fzmovies_test\spiders\test_spider.py", line 77, in parse_film
+    yield response.follow(url=response.xpath("//a[@id='downloadoptionslink2']//@href")[1].get(), callback=self.parse_first_link,
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-01-11 03:54:31 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-30666-5f249c87299dda9c54bba63e7aef80a3> (referer: https://www.fzmovies.net/movie-Lara%20Croft%20Tomb%20Raider%20The%20Cradle%20of%20Life--hmp4.htm)
+2022-01-11 03:54:34 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-31072-e0f3fe222528cc92eabebcdb052a59fe> (referer: https://www.fzmovies.net/movie-The%20Odd%20Life%20of%20Timothy%20Green--hmp4.htm)
+2022-01-11 03:54:34 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-38238-fa61756e9070f1da6f4b26fd06b95176> (referer: https://www.fzmovies.net/movie-Ghostbusters%20Afterlife--hmp4.htm)
+2022-01-11 03:54:34 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-34680-0d030b16b77a72aaeb93936670587305> (referer: https://www.fzmovies.net/movie-The%20Secret%20Life%20of%20Walter%20Mitty--hmp4.htm)
+2022-01-11 03:54:34 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-22548-12fe07ea2250c74f6708a900180286ff> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-22548-49ce91d085d6e4d74020cd68b6d0a32b)
+2022-01-11 03:54:34 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-25879-04860de6047a29eb15670e0ba4b12d89> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-25879-f923510b0e3162e1bd1692f4025b74a2)
+2022-01-11 03:54:35 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-30947-f89ecb9d1f8e3ebba999518c29c12d0c> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-30947-5d47acdcfc7e8728f27d9e842944b2fa)
+2022-01-11 03:54:35 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-36793-1abfc31aa120e10e45671d6308571440> (referer: https://www.fzmovies.net/movie-Life%201999--hmp4.htm)
+2022-01-11 03:54:35 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-31294-9738d6793e86dd6c43a2ebae65fda7f0> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-31294-7cc9def4a6e7ab21b32824eb722539ab)
+2022-01-11 03:54:35 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-22548-12fe07ea2250c74f6708a900180286ff>
+{'movie_title': 'Life in a Year', 'movie_size': ' (285 MB) { 219428 hits }', 'movie_img': '/imdb_images/Life.in.a.Year.2020.jpg', 'download_link': 'dlink.php?id=res/614774a84bca32182e1b81d831542d9a/a1919288de4416b4ed6537a235dbb4e1/Life_in_a_Year_(2020)_WEB-DL_720p_(fzmovies.net)_ce430c3e26091cdd925643d7e4988020.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 03:54:35 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-25879-04860de6047a29eb15670e0ba4b12d89>
+{'movie_title': 'Bad Boys for Life', 'movie_size': ' (328 MB) { 32518 hits }', 'movie_img': '/imdb_images/Bad.Boys.for.Life.2020.jpg', 'download_link': 'dlink.php?id=res/614774a84bca32182e1b81d831542d9a/55c3579d885db60054ddf591ac3c42b2/Bad_Boys_for_Life_(2020)_BluRay v2_720p_(fzmovies.net)_35d052f883a6e79f0a44f5cba60d6fdd.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 03:54:35 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-30947-f89ecb9d1f8e3ebba999518c29c12d0c>
+{'movie_title': 'The Secret Life of Pets 2', 'movie_size': ' (229 MB) { 4770 hits }', 'movie_img': '/imdb_images/The.Secret.Life.of.Pets.2.2019.jpg', 'download_link': 'dlink.php?id=res/950b25c4104d424c7ccd974021ac07f0/0d8efa4553a74605bdee8bb0c2c95eb2/The_Secret_Life_of_Pets_2_(2019)_BluRay_720p_(fzmovies.net)_021e11132073c1499d73417f9bfcd511.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 03:54:35 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-31294-9738d6793e86dd6c43a2ebae65fda7f0>
+{'movie_title': 'Life of Pi', 'movie_size': ' (339 MB) { 1691 hits }', 'movie_img': '/imdb_images/Life of Pi.jpg', 'download_link': 'dlink.php?id=res/6055fe40123fab85e251b371f5265d13/43ecfeddfa63de70884fb41143c555ab/Life_of_Pi_(2012)_BluRay_720p_(fzmovies.net)_9930a814edfa361a53b58427375b1aee.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 03:54:36 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-33019-29416db2aa7eea05474ad151510de42f> (referer: https://www.fzmovies.net/movie-The%20Lifeguard--hmp4.htm)
+2022-01-11 03:54:36 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-30956-0136d64bb9c1eb30facbba10154f8671> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-30956-bb909d0b5d9c173c35174886408bcea9)
+2022-01-11 03:54:36 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-28416-cb755195526328b9ffa3de38286816a0> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-28416-8788dd2745ce4cc1c42078f5f71727d7)
+2022-01-11 03:54:36 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-37301-5635e6c43b4455f9d321d3d376b66b89> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-37301-e354fa707d35d2526bf91f8729f5e16b)
+2022-01-11 03:54:36 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-30956-0136d64bb9c1eb30facbba10154f8671>
+{'movie_title': 'The Secret Life of Pets', 'movie_size': ' (230 MB) { 135197 hits }', 'movie_img': '/imdb_images/The.Secret.Life.Of.Pets.2016.jpg', 'download_link': 'dlink.php?id=res/950b25c4104d424c7ccd974021ac07f0/39f524daa261b89c65f071408e03a140/The_Secret_Life_of_Pets_(2016)_BluRay_720p_(fzmovies.net)_6234d2b29867aabeb9a8c7c14141819b.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 03:54:36 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-28416-cb755195526328b9ffa3de38286816a0>
+{'movie_title': 'Resident Evil Afterlife 2010', 'movie_size': ' (258 MB) { 68542 hits }', 'movie_img': '/imdb_images/Resident.Evil.Afterlife.2010.jpg', 'download_link': 'dlink.php?id=res/950b25c4104d424c7ccd974021ac07f0/b9402a26345825a9d7180c68347e94e0/Resident_Evil_Afterlife_2010_(2010)_BluRay_720p_(fzmovies.net)_c6488d1562e71e08d9115cc3bf2d580b.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 03:54:36 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-27374-2d349cd5f01f22daa7c301d4da85759a> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-27374-d56126d80cf2978941af2a17fdaa9083)
+2022-01-11 03:54:36 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-34015-9b1f17ecb3263eb0398d8f0bb0f5cb46> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-34015-d892dd3c845515c82f6df854f4caa09e)
+2022-01-11 03:54:36 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-34075-fc40a2f7120a255c6afafc20d4c3b8ca> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-34075-0223ebaca26b93084aa824bcca28b6ae)
+2022-01-11 03:54:36 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-37301-5635e6c43b4455f9d321d3d376b66b89>
+{'movie_title': 'Life of the Party', 'movie_size': ' (280 MB) { 70127 hits }', 'movie_img': '/imdb_images/life.of.the.party.2018.jpg', 'download_link': 'dlink.php?id=res/950b25c4104d424c7ccd974021ac07f0/c578af5185e532cee0cbbc95113e3df7/Life_of_the_Party_(2018)_BluRay_720p_(fzmovies.net)_5825c358c8565702915bc6d1caba59c2.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 03:54:36 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-32573-471b3e91bfef60b567a81ac534c73e60> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-32573-19207e9d2f9c5432cb0662b8ec41f16d)
+2022-01-11 03:54:36 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-27374-2d349cd5f01f22daa7c301d4da85759a>
+{'movie_title': 'Life 2017', 'movie_size': ' (277 MB) { 4009 hits }', 'movie_img': '/imdb_images/Life.2017.jpg', 'download_link': 'dlink.php?id=res/950b25c4104d424c7ccd974021ac07f0/2af3282008031dadd67629f8c316b082/Life_2017_(2017)_BluRay v2_720p_(fzmovies.net)_4712805cdd0a0db4e5aee664c7525610.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 03:54:36 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-34015-9b1f17ecb3263eb0398d8f0bb0f5cb46>
+{'movie_title': 'Anti Life [Breach]', 'movie_size': ' (246 MB) { 524 hits }', 'movie_img': '/imdb_images/Breach.2020.jpg', 'download_link': 'dlink.php?id=res/614774a84bca32182e1b81d831542d9a/ef0b063ee4a1dfa670a5c33b49ff5aa7/Anti_Life_[Breach]_(2020)_BluRay_720p_(fzmovies.net)_93087df77205dc586fc94909acf66e00.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 03:54:36 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-34075-fc40a2f7120a255c6afafc20d4c3b8ca>
+{'movie_title': 'Middle School The Worst Years of My Life', 'movie_size': ' (245 MB) { 37666 hits }', 'movie_img': '/imdb_images/Middle.School.The.Worst.Years.of.My.Life.2016.jpg', 'download_link': 'dlink.php?id=res/950b25c4104d424c7ccd974021ac07f0/46e6b3d216340f98cfe0890a7a1b9328/Middle_School_The_Worst_Years_of_My_Life_(2016)_BluRay_720p_(fzmovies.net)_1c47fb3f9036c39cefd605c76faa408a.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 03:54:36 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-32573-471b3e91bfef60b567a81ac534c73e60>
+{'movie_title': 'Life as We Know It', 'movie_size': ' (306 MB) { 54066 hits }', 'movie_img': '/imdb_images/Life as We Know It.jpg', 'download_link': 'dlink.php?id=res/614774a84bca32182e1b81d831542d9a/f34b6d269f585bae7d00232a1084e154/Life_as_We_Know_It_(2010)_BluRay_720p_(fzmovies.net)_de9e48ae7482aa258c8ba14a2defb405.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 03:54:37 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-30666-c548c05c6256ede71427822bbafcc621> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-30666-5f249c87299dda9c54bba63e7aef80a3)
+2022-01-11 03:54:37 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-31072-9cb4d38a4dad092863db2d5c29f4ec5f> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-31072-e0f3fe222528cc92eabebcdb052a59fe)
+2022-01-11 03:54:37 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-38238-c36150ad52b547ca76fe6303e964e10c> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-38238-fa61756e9070f1da6f4b26fd06b95176)
+2022-01-11 03:54:37 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-34680-8aad3564d394e7433665caa802e4b795> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-34680-0d030b16b77a72aaeb93936670587305)
+2022-01-11 03:54:37 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-30666-c548c05c6256ede71427822bbafcc621>
+{'movie_title': 'Lara Croft Tomb Raider The Cradle of Life', 'movie_size': ' (314 MB) { 36020 hits }', 'movie_img': '/imdb_images/Lara.Croft.Tomb.Raider.The.Cradle.of.Life.2003.jpg', 'download_link': 'dlink.php?id=res/950b25c4104d424c7ccd974021ac07f0/4ec2f241f41d5862a8b1b6358b7562e4/Lara_Croft_Tomb_Raider_The_Cradle_of_Life_(2003)_BluRay_720p_(fzmovies.net)_f93ab75fb882a6fd072caf6cf4df956e.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 03:54:37 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-36793-af455ccf782de183e5cdcde243062f52> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-36793-1abfc31aa120e10e45671d6308571440)
+2022-01-11 03:54:37 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-31072-9cb4d38a4dad092863db2d5c29f4ec5f>
+{'movie_title': 'The Odd Life of Timothy Green', 'movie_size': ' (279 MB) { 1001 hits }', 'movie_img': '/imdb_images/The Odd Life of Timothy Green.jpg', 'download_link': 'dlink.php?id=res/614774a84bca32182e1b81d831542d9a/d75deacb8662ae28cb70c85b23ed6747/The_Odd_Life_of_Timothy_Green_(2012)_CAMRip_720p_(fzmovies.net)_6156fdf11727f75d26359d75dd825314.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 03:54:37 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-33019-6abdf3aba6a4b96c8a7b2ba8ba9df65b> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-33019-29416db2aa7eea05474ad151510de42f)
+2022-01-11 03:54:37 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-38238-c36150ad52b547ca76fe6303e964e10c>
+{'movie_title': 'Ghostbusters Afterlife', 'movie_size': ' (330 MB) { 19400 hits }', 'movie_img': '/imdb_images/Ghostbusters.Afterlife.2021.jpg', 'download_link': 'dlink.php?id=res/950b25c4104d424c7ccd974021ac07f0/6369839fa07bdf94c0d3f680e89d3051/Ghostbusters_Afterlife_(2021)_WEB-DL_720p_(fzmovies.net)_bee3fc427a6090752883e199f8814735.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 03:54:37 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-34680-8aad3564d394e7433665caa802e4b795>
+{'movie_title': 'The Secret Life of Walter Mitty', 'movie_size': ' (306 MB) { 28124 hits }', 'movie_img': '/imdb_images/The Secret Life of Walter Mitty.jpg', 'download_link': 'dlink.php?id=res/614774a84bca32182e1b81d831542d9a/c0526376d7a066cfca493a462a602d7d/The_Secret_Life_of_Walter_Mitty_(2013)_BluRay_720p_(fzmovies.net)_a3f63febebd1476c1b79a3eabf6446fb.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 03:54:37 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-36793-af455ccf782de183e5cdcde243062f52>
+{'movie_title': 'Life 1999', 'movie_size': ' (290 MB) { 28755 hits }', 'movie_img': '/imdb_images/Life.1999.jpg', 'download_link': 'dlink.php?id=res/950b25c4104d424c7ccd974021ac07f0/472dd8d729da939f062e160515fb8af3/Life_1999_(1999)_BluRay_720p_(fzmovies.net)_fb9fadde3b7e35966f24afd33aa73376.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 03:54:37 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-33019-6abdf3aba6a4b96c8a7b2ba8ba9df65b>
+{'movie_title': 'The Lifeguard', 'movie_size': ' (264 MB) { 17445 hits }', 'movie_img': '/imdb_images/The Lifeguard.jpg', 'download_link': 'dlink.php?id=res/614774a84bca32182e1b81d831542d9a/58396e9ff51540d4df49b9edab8bf929/The_Lifeguard_(2013)_BluRay_720p_(fzmovies.net)_26d31f846cc2e40f980ee3ff7559558a.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 03:54:37 [scrapy] INFO: Closing spider (finished)
+2022-01-11 03:54:39 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 31142,
+ 'downloader/request_count': 58,
+ 'downloader/request_method_count/GET': 58,
+ 'downloader/response_bytes': 1000160,
+ 'downloader/response_count': 58,
+ 'downloader/response_status_count/200': 55,
+ 'downloader/response_status_count/301': 2,
+ 'downloader/response_status_count/404': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 1, 11, 11, 54, 37, 711602),
+ 'item_scraped_count': 17,
+ 'log_count/DEBUG': 233,
+ 'log_count/ERROR': 3,
+ 'log_count/INFO': 6,
+ 'request_depth_max': 3,
+ 'response_received_count': 56,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 56,
+ 'scheduler/dequeued/memory': 56,
+ 'scheduler/enqueued': 56,
+ 'scheduler/enqueued/memory': 56,
+ 'spider_exceptions/IndexError': 3,
+ 'start_time': datetime.datetime(2022, 1, 11, 11, 53, 46, 104596)}
+2022-01-11 03:54:39 [scrapy] INFO: Spider closed (finished)

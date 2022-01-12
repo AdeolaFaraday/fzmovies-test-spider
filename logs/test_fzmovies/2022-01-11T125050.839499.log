@@ -1,0 +1,210 @@
+2022-01-11 12:50:53 [scrapy] DEBUG: Redirecting (301) to <GET https://www.fzmovies.net/robots.txt> from <GET http://www.fzmovies.net/robots.txt>
+2022-01-11 12:50:55 [scrapy] DEBUG: Crawled (404) <GET https://www.fzmovies.net/robots.txt> (referer: None)
+2022-01-11 12:50:55 [scrapy] DEBUG: Redirecting (301) to <GET https://www.fzmovies.net/> from <GET http://www.fzmovies.net/>
+2022-01-11 12:50:56 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/> (referer: None)
+2022-01-11 12:51:45 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Birds%20of%20Prey%20--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 12:51:45 [scrapy] ERROR: Spider error processing <GET https://www.fzmovies.net/movie-Birds%20of%20Prey%20--hmp4.htm> (referer: https://www.fzmovies.net/)
+Traceback (most recent call last):
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\adeola\Projects\fzmovies_test\fzmovies_test\spiders\test_spider.py", line 77, in parse_film
+    yield response.follow(url=response.xpath("//a[@id='downloadoptionslink2']//@href")[1].get(), callback=self.parse_first_link,
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-01-11 12:51:45 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-To%20All%20the%20Boys%20P.S.%20I%20Still%20Love%20You%20--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 12:51:45 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Kama%20Sutra:%20A%20Tale%20of%20Love--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 12:51:45 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-To%20All%20the%20Boys%20Ive%20Loved%20Before--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 12:51:46 [scrapy] ERROR: Spider error processing <GET https://www.fzmovies.net/movie-To%20All%20the%20Boys%20P.S.%20I%20Still%20Love%20You%20--hmp4.htm> (referer: https://www.fzmovies.net/)
+Traceback (most recent call last):
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\adeola\Projects\fzmovies_test\fzmovies_test\spiders\test_spider.py", line 77, in parse_film
+    yield response.follow(url=response.xpath("//a[@id='downloadoptionslink2']//@href")[1].get(), callback=self.parse_first_link,
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-01-11 12:51:46 [scrapy] ERROR: Spider error processing <GET https://www.fzmovies.net/movie-Kama%20Sutra:%20A%20Tale%20of%20Love--hmp4.htm> (referer: https://www.fzmovies.net/)
+Traceback (most recent call last):
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\adeola\Projects\fzmovies_test\fzmovies_test\spiders\test_spider.py", line 77, in parse_film
+    yield response.follow(url=response.xpath("//a[@id='downloadoptionslink2']//@href")[1].get(), callback=self.parse_first_link,
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-01-11 12:51:46 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Falling%20Inn%20Love--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 12:51:46 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Love%20Dont%20Cost%20A%20Thing--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 12:51:46 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-The%20Angry%20Birds%20Movie%202--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 12:51:46 [scrapy] ERROR: Spider error processing <GET https://www.fzmovies.net/movie-Falling%20Inn%20Love--hmp4.htm> (referer: https://www.fzmovies.net/)
+Traceback (most recent call last):
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\adeola\Projects\fzmovies_test\fzmovies_test\spiders\test_spider.py", line 77, in parse_film
+    yield response.follow(url=response.xpath("//a[@id='downloadoptionslink2']//@href")[1].get(), callback=self.parse_first_link,
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-01-11 12:51:46 [scrapy] ERROR: Spider error processing <GET https://www.fzmovies.net/movie-Love%20Dont%20Cost%20A%20Thing--hmp4.htm> (referer: https://www.fzmovies.net/)
+Traceback (most recent call last):
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\adeola\Projects\fzmovies_test\fzmovies_test\spiders\test_spider.py", line 77, in parse_film
+    yield response.follow(url=response.xpath("//a[@id='downloadoptionslink2']//@href")[1].get(), callback=self.parse_first_link,
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-01-11 12:51:46 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Love%20Simon--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 12:51:47 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Love%20and%20Basketball%202000--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 12:51:49 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-The%20Lovebirds--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 12:51:49 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Love%20Rosie--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 12:51:49 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Love%20and%20Monsters--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 12:51:49 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-The%20Angry%20Birds%20Movie--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 12:51:49 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Endless%20Love%202014--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 12:51:50 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Baaghi%20A%20Rebel%20For%20Love--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 12:51:50 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-American%20Pie%20Presents%20-%20The%20Book%20of%20Love--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 12:51:51 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Love%20and%20other%20Drugs%20--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 12:51:51 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-33676-8cc40f5a3787de6211078ce6855705b9> (referer: https://www.fzmovies.net/movie-The%20Angry%20Birds%20Movie%202--hmp4.htm)
+2022-01-11 12:51:51 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-29001-a1ff7405bd49a6a0cae3e40173096d24> (referer: https://www.fzmovies.net/movie-Love%20Simon--hmp4.htm)
+2022-01-11 12:51:51 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-35140-11fb1f848e98d445cddba2bef1b8442f> (referer: https://www.fzmovies.net/movie-Love%20and%20Basketball%202000--hmp4.htm)
+2022-01-11 12:51:52 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-22991-2bb9dcb2dce06ec4acd18064733a4ad8> (referer: https://www.fzmovies.net/movie-Love%20and%20Monsters--hmp4.htm)
+2022-01-11 12:51:52 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-26008-b12155b1e4720c212a6bbfd1468d2815> (referer: https://www.fzmovies.net/movie-The%20Lovebirds--hmp4.htm)
+2022-01-11 12:51:53 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-34384-059df31361dd2ae52b062c27342763dd> (referer: https://www.fzmovies.net/movie-Endless%20Love%202014--hmp4.htm)
+2022-01-11 12:51:53 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-31790-8a96a40de0147ba05813d525c1b8b2fc> (referer: https://www.fzmovies.net/movie-Love%20Rosie--hmp4.htm)
+2022-01-11 12:51:53 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-33661-446cffa01353fe48bb10a6e873860b66> (referer: https://www.fzmovies.net/movie-The%20Angry%20Birds%20Movie--hmp4.htm)
+2022-01-11 12:51:53 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-29666-2e8074ebb8d9856552a2984dafb0ec5e> (referer: https://www.fzmovies.net/movie-Baaghi%20A%20Rebel%20For%20Love--hmp4.htm)
+2022-01-11 12:51:53 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-37711-a0c87dcead4058759625613db9f560dd> (referer: https://www.fzmovies.net/movie-To%20All%20the%20Boys%20Ive%20Loved%20Before--hmp4.htm)
+2022-01-11 12:51:54 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Ajab%20Gazabb%20Love--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 12:51:54 [scrapy] ERROR: Spider error processing <GET https://www.fzmovies.net/movie-Ajab%20Gazabb%20Love--hmp4.htm> (referer: https://www.fzmovies.net/)
+Traceback (most recent call last):
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\adeola\Projects\fzmovies_test\fzmovies_test\spiders\test_spider.py", line 77, in parse_film
+    yield response.follow(url=response.xpath("//a[@id='downloadoptionslink2']//@href")[1].get(), callback=self.parse_first_link,
+  File "C:\Users\adeola\anaconda3\envs\virtual_workspace\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-01-11 12:51:54 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-32728-ff9075c55022a41c5d05fc7488ef0afa> (referer: https://www.fzmovies.net/movie-Love%20and%20other%20Drugs%20--hmp4.htm)
+2022-01-11 12:51:54 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-26551-e6695f54a2cab7c2a5ebaa209dcc1d0b> (referer: https://www.fzmovies.net/movie-American%20Pie%20Presents%20-%20The%20Book%20of%20Love--hmp4.htm)
+2022-01-11 12:51:56 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-29001-41270dde69cd2cd2f7cbb8366f4f7814> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-29001-a1ff7405bd49a6a0cae3e40173096d24)
+2022-01-11 12:51:56 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-31790-996193299fdf856cc7633461ce3f9c86> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-31790-8a96a40de0147ba05813d525c1b8b2fc)
+2022-01-11 12:51:56 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-26008-057af42a827a8e3ae8f2f4289383ec22> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-26008-b12155b1e4720c212a6bbfd1468d2815)
+2022-01-11 12:51:56 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-35140-75794cd9a0cc4cbf011d242216c3318d> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-35140-11fb1f848e98d445cddba2bef1b8442f)
+2022-01-11 12:51:56 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-33676-627c8e5dc385c1dceefa646f043b25a0> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-33676-8cc40f5a3787de6211078ce6855705b9)
+2022-01-11 12:51:56 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-22991-9790d13844ba325913e6cbb2d882f6cb> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-22991-2bb9dcb2dce06ec4acd18064733a4ad8)
+2022-01-11 12:51:56 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-29001-41270dde69cd2cd2f7cbb8366f4f7814>
+{'movie_title': 'Love Simon', 'movie_size': ' (293 MB) { 73668 hits }', 'movie_img': '/imdb_images/Love Simon.2018.jpg', 'download_link': 'dlink.php?id=res/950b25c4104d424c7ccd974021ac07f0/ce453dbdec1316a0579a68aead13da7e/Love_Simon_(2018)_BluRay_720p_(fzmovies.net)_1b1b88b71ff8892f66ad258eeb436bfd.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 12:51:56 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-31790-996193299fdf856cc7633461ce3f9c86>
+{'movie_title': 'Love Rosie', 'movie_size': ' (275 MB) { 3711 hits }', 'movie_img': '/imdb_images/Love.Rosie.2014.jpg', 'download_link': 'dlink.php?id=res/614774a84bca32182e1b81d831542d9a/f0b0e8e4106f106aab432b688faeb41c/Love_Rosie_(2014)_BluRay_720p_(fzmovies.net)_3a163e7d16fd457cef949169905b2efd.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 12:51:56 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-26008-057af42a827a8e3ae8f2f4289383ec22>
+{'movie_title': 'The Lovebirds', 'movie_size': ' (249 MB) { 9931 hits }', 'movie_img': '/imdb_images/The.Lovebirds.2020.jpg', 'download_link': 'dlink.php?id=res/614774a84bca32182e1b81d831542d9a/9ad4d0caa57426253cbc3781e83d246b/The_Lovebirds_(2020)_BluRayExt_720p_(fzmovies.net)_9beaa407dd6597c531bc60399c9c9f86.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 12:51:56 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-35140-75794cd9a0cc4cbf011d242216c3318d>
+{'movie_title': 'Love and Basketball 2000', 'movie_size': ' (333 MB) { 76277 hits }', 'movie_img': '/imdb_images/Love.and.Basketball.2000.jpg', 'download_link': 'dlink.php?id=res/950b25c4104d424c7ccd974021ac07f0/7ddf9bc498e63f9e8bb29a091bff6ff9/Love_and_Basketball_2000_(2000)_BluRay_720p_(fzmovies.net)_54dccad21627e0cb6a5ec209f99a50a6.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 12:51:56 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-22991-9790d13844ba325913e6cbb2d882f6cb>
+{'movie_title': 'Love and Monsters', 'movie_size': ' (288 MB) { 74201 hits }', 'movie_img': '/imdb_images/Love.and.Monsters.2020.jpg', 'download_link': 'dlink.php?id=res/614774a84bca32182e1b81d831542d9a/bac6c928c049c6ec9ccef4d78b432baa/Love_and_Monsters_(2020)_BluRay_720p_(fzmovies.net)_247c90d67a817bb42ea511df0be4e4e6.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 12:51:56 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-33676-627c8e5dc385c1dceefa646f043b25a0>
+{'movie_title': 'The Angry Birds Movie 2', 'movie_size': ' (259 MB) { 166560 hits }', 'movie_img': '/imdb_images/The.Angry.Birds.Movie.2.2019.jpg', 'download_link': 'dlink.php?id=res/614774a84bca32182e1b81d831542d9a/fa9e7d2cdf1bc6fbdd283341f89b77b8/The_Angry_Birds_Movie_2_(2019)_BluRay_720p_(fzmovies.net)_a92cb346969a729a7511866508ef8954.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 12:51:57 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-29666-0840351bd0788b6cbbdedd08319392a3> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-29666-2e8074ebb8d9856552a2984dafb0ec5e)
+2022-01-11 12:51:57 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-32728-4f06100c682e9de855f8ef776f9d62c7> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-32728-ff9075c55022a41c5d05fc7488ef0afa)
+2022-01-11 12:51:57 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-26551-75e25ef5d607c5f626a02b488a8aba9b> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-26551-e6695f54a2cab7c2a5ebaa209dcc1d0b)
+2022-01-11 12:51:57 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-34384-148f1b17fe094c024a976083190188e6> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-34384-059df31361dd2ae52b062c27342763dd)
+2022-01-11 12:51:57 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-29666-0840351bd0788b6cbbdedd08319392a3>
+{'movie_title': 'Baaghi A Rebel For Love', 'movie_size': ' (357 MB) { 61779 hits }', 'movie_img': '/imdb_images/Baaghi.2016.jpg', 'download_link': 'dlink.php?id=res/6055fe40123fab85e251b371f5265d13/afdd8a1b41c316ce71adf07638dd8770/Baaghi_A_Rebel_For_Love_(2016)_BluRay_720p_(fzmovies.net)_7a17df08d02b755a479177852102e364.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 12:51:57 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-32728-4f06100c682e9de855f8ef776f9d62c7>
+{'movie_title': 'Love and other Drugs ', 'movie_size': ' (300 MB) { 60258 hits }', 'movie_img': '/imdb_images/Love.And.Other.Drugs.2010.jpg', 'download_link': 'dlink.php?id=res/614774a84bca32182e1b81d831542d9a/4cf5c2379c45ccc22a5edf4672826304/Love_and_other_Drugs__(2010)_BluRay_720p_(fzmovies.net)_4c2b9c5368068b5303a2e63a2f96adce.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 12:51:57 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-26551-75e25ef5d607c5f626a02b488a8aba9b>
+{'movie_title': 'American Pie Presents - The Book of Love', 'movie_size': ' (251 MB) { 7664 hits }', 'movie_img': '/imdb_images/American Pie Presents: The Book of Love.jpg', 'download_link': 'dlink.php?id=res/614774a84bca32182e1b81d831542d9a/b8202086bd0a2b350da00de9edc20660/American_Pie_Presents:_The_Book_of_Love_(2009)_BluRay_720p_(fzmovies.net)_bcd17f9988ecad997ab5980c2b2f91b7.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 12:51:57 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-34384-148f1b17fe094c024a976083190188e6>
+{'movie_title': 'Endless Love 2014', 'movie_size': ' (279 MB) { 61179 hits }', 'movie_img': '/imdb_images/Endless.Love.2014.jpg', 'download_link': 'dlink.php?id=res/950b25c4104d424c7ccd974021ac07f0/d9026e5ee9fbb9732a96aa31405c97c6/Endless_Love_2014_(2014)_BluRay_720p_(fzmovies.net)_3c7674837f858883510c06e676989934.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 12:51:57 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-37711-ee4e462e5061266a1efa6714d388cbd4> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-37711-a0c87dcead4058759625613db9f560dd)
+2022-01-11 12:51:57 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-37711-ee4e462e5061266a1efa6714d388cbd4>
+{'movie_title': 'To All the Boys Ive Loved Before', 'movie_size': ' (266 MB) { 199787 hits }', 'movie_img': '/imdb_images/To.All.the.Boys.Ive.Loved.Before.2018.jpg', 'download_link': 'dlink.php?id=res/950b25c4104d424c7ccd974021ac07f0/8ababbcb9de4dd509ab3d99cc9ff08db/To_All_the_Boys_Ive_Loved_Before_(2018)_WEB-DL_720p_(fzmovies.net)_c3776aedc99b574939e611121dfa3c16.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 12:51:57 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-33661-2a22b7c9eb5e54aa2ebecb2361fc930c> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-33661-446cffa01353fe48bb10a6e873860b66)
+2022-01-11 12:51:58 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-33661-2a22b7c9eb5e54aa2ebecb2361fc930c>
+{'movie_title': 'The Angry Birds Movie', 'movie_size': ' (260 MB) { 108574 hits }', 'movie_img': '/imdb_images/Angry.Birds.2016.jpg', 'download_link': 'dlink.php?id=res/950b25c4104d424c7ccd974021ac07f0/04ff4ef16a218e06399facf4871e21d0/The_Angry_Birds_Movie_(2016)_BluRay_720p_(fzmovies.net)_3fe10e9a1b79e2e3eefcfa3fe2239947.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 12:52:00 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Crazy%20Stupid%20Love--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 12:52:00 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/movie-Love%20Actually--hmp4.htm> (referer: https://www.fzmovies.net/)
+2022-01-11 12:52:00 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-31635-8c9376260e2a187c92897baedc738de3> (referer: https://www.fzmovies.net/movie-Crazy%20Stupid%20Love--hmp4.htm)
+2022-01-11 12:52:01 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-31635-6e7d6d6d258712195274695285bd9f58> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-31635-8c9376260e2a187c92897baedc738de3)
+2022-01-11 12:52:01 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-31635-6e7d6d6d258712195274695285bd9f58>
+{'movie_title': 'Crazy Stupid Love', 'movie_size': ' (316 MB) { 127536 hits }', 'movie_img': '/imdb_images/Crazy Stupid Love.jpg', 'download_link': 'dlink.php?id=res/614774a84bca32182e1b81d831542d9a/40bd9eec7d47bd516ba6e9f2c0b605d6/Crazy_Stupid_Love_(2011)_BluRay_720p_(fzmovies.net)_06639e5f76b34de5c1f06c530f644735.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 12:52:02 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download1.php?downloadoptionskey=5-28412-9fba8eb5744993be81ba5b06d3ceb924> (referer: https://www.fzmovies.net/movie-Love%20Actually--hmp4.htm)
+2022-01-11 12:52:03 [scrapy] DEBUG: Crawled (200) <GET https://www.fzmovies.net/download.php?downloadkey=5-28412-f0d77c3a7d5a8e4fa6d909eb5aa58c7f> (referer: https://www.fzmovies.net/download1.php?downloadoptionskey=5-28412-9fba8eb5744993be81ba5b06d3ceb924)
+2022-01-11 12:52:03 [scrapy] DEBUG: Scraped from <200 https://www.fzmovies.net/download.php?downloadkey=5-28412-f0d77c3a7d5a8e4fa6d909eb5aa58c7f>
+{'movie_title': 'Love Actually', 'movie_size': ' (359 MB) { 18464 hits }', 'movie_img': '/imdb_images/Love Actually.jpg', 'download_link': 'dlink.php?id=res/614774a84bca32182e1b81d831542d9a/6ff49ed8d8590fd3a918e206c41dbe5a/Love_Actually_(2003)_BluRay_720p_(fzmovies.net)_bbc9d241560d71754a1168fd1f219d92.mkv&sn=ernglkwrflkweop.poiuytrewqasdfghjkl.cyou&altsn=ma4re4qwfh.poiuytrewqasdfghjkl.cyou'}
+2022-01-11 12:52:03 [scrapy] INFO: Closing spider (finished)
+2022-01-11 12:52:05 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 27627,
+ 'downloader/request_count': 52,
+ 'downloader/request_method_count/GET': 52,
+ 'downloader/response_bytes': 876112,
+ 'downloader/response_count': 52,
+ 'downloader/response_status_count/200': 49,
+ 'downloader/response_status_count/301': 2,
+ 'downloader/response_status_count/404': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 1, 11, 20, 52, 3, 773023),
+ 'item_scraped_count': 14,
+ 'log_count/DEBUG': 224,
+ 'log_count/ERROR': 6,
+ 'log_count/INFO': 6,
+ 'request_depth_max': 3,
+ 'response_received_count': 50,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 50,
+ 'scheduler/dequeued/memory': 50,
+ 'scheduler/enqueued': 50,
+ 'scheduler/enqueued/memory': 50,
+ 'spider_exceptions/IndexError': 6,
+ 'start_time': datetime.datetime(2022, 1, 11, 20, 50, 52, 699904)}
+2022-01-11 12:52:05 [scrapy] INFO: Spider closed (finished)
